@@ -1,0 +1,17 @@
+If we dont apply activation function to our neural network then it wont be able to capture non-linear transformation/data.
+Ideal Activation Function:-
+1)Non linear activation function
+2)differentiable(back propagation)
+3)computationally inexpensive
+4)zero centered/normalized-converges faster on normalized data(eg-tanh)
+5)Non-saturating(the o/p should not saturate at a point)for saturating function-vanishing gradient problem
+
+activation functions:-
+1)Sigmoid
+     advantages:-
+           i)o/p b/w 0-1=>can be treated as probability in o/p layer.It is treated as probability while dealing with binary classification problem.
+           ii)Non-linear function
+           iii)differentiable
+     disadvantages:-
+            i)saturating function-so,sigmoid is not used in hidden layer-vanishing gradient problem
+            ii)Non-zero centered-not normalized-training gets slow-slow convergence
