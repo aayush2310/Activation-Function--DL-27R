@@ -15,3 +15,25 @@ activation functions:-
      disadvantages:-
             i)saturating function-so,sigmoid is not used in hidden layer-vanishing gradient problem
             ii)Non-zero centered-not normalized-training gets slow-slow convergence
+            iii)computationally expensive
+            
+            
+2)Tanh
+       advantages:-
+                1)non-linear
+                2)differentiable
+                3)zero-centered
+       disadvantages:-
+                1)saturating function
+                2)computationally expensive
+                
+ 3)Relu
+         advantages:-
+                    1)non-linear
+                    2)non-saturated in +ve region
+                    3)computationally inexpensive
+                    4)faster convergence
+          disadvantage:-
+                    1)non-differentiable(apply if else in coding)
+                    2)not zero centered(to do so we use batch normalization=>normalizes the o/p of the hidden layers)
+                    3)dying relu problem
